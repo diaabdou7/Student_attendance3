@@ -1,0 +1,108 @@
+html, body
+{
+height:100%;
+width:100%;
+}
+ 
+.global
+{
+position:relative;
+height:100%;
+width:100%;
+max-width:800px;
+margin:0px auto;
+padding:0;
+}
+ 
+.conteneur
+{
+width: 100%;
+}
+ 
+.corps
+{
+position:relative;
+top:118px;
+left:200px;
+padding-bottom:100px;
+width:600px;
+z-index:0;
+overflow-y:auto;
+}
+ 
+.map
+{
+width:330px;
+height:330px;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+border: ridge 5px #79572a;
+overflow: hidden;
+}
+ 
+.ligne
+{
+border: none;
+display: block;
+margin:0px;
+padding:0px;
+}
+ 
+.case
+{
+float: left;
+}
+ 
+@media screen and (max-width: 800px)
+{
+    .header
+    {
+    width:100%;
+    }
+ 
+ 
+    .corps
+    {
+    left:25%;  
+    width:75%;
+    }
+}
+ 
+ 
+@media screen and (max-height: 600px)
+{
+    html, body
+    {
+    height:600px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    }
+    
+    .global
+    {
+    position: static;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    }
+ 
+    .conteneur
+    {
+    position: static;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    height: 400px;
+    }
+ 
+    .corps
+    {
+    position: static;
+    margin-left:25%;
+    padding-bottom:100px;
+    width:75%;
+    height: 400px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    z-index:-1;
+    }
+}
